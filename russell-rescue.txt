@@ -1,0 +1,13 @@
+
+  --------------------------------------------
+   RUSSELL RESCUE WEBSITE
+  --------------------------------------------
+  
+  *** DELETE AFTER DEVELOPMENT ***
+  
+  Root User: beck410
+  Database: c9
+  
+  username: russell_rescue
+  p/w: penny
+   
