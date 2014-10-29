@@ -6,7 +6,11 @@
  */
 ?>
 <div class="row">
-<button class="donate-button">DONATE TODAY!</button>
+<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<div id="paypal_button" class="paypal_button widget-area" role="complementary">
+		<?php dynamic_sidebar( 'paypal_button' ); ?>
+	</div><!-- #primary-sidebar -->
+	<?php endif; ?>
 </div>
 
 <div class="row">

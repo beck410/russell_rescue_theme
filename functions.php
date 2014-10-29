@@ -85,6 +85,15 @@ function r_rescue_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	
+	register_sidebar( array(
+		'name' => __('paypal_button'),
+		'id' => 'paypal_button',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'r_rescue_widgets_init' );
 
