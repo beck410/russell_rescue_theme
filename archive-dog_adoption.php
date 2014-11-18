@@ -20,7 +20,7 @@
                         </div> <!-- orange-box-stripes --> 
                     </div> <!-- row -->
                      <div class="row">
-                        <div class="col-md-4 col-xs-6">
+                        <div class="col-md-4 col-xs-6 archive-image">
                             <?php
                             if( has_post_thumbnail() ) { ?>
                                 <img src= "<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID) ); ?>" />

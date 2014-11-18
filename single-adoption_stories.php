@@ -3,16 +3,18 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <section class="col-md-12 green-box">
+    <section class="col-md-12 blue-box">
         	<div class="row">
-        		<div class="col-md-8 col-xs-8 green-box-title box-titles">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</div> <!-- green-box-title -->
-				<div class="col-md-4 col-xs-4 green-box-stripes">
-				</div> <!-- green-box-stripes -->
+        		<div class="col-md-12 box-titles">
+	        		<div class="col-md-8 col-xs-8 blue-box-title">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</div> <!-- blue-box-title -->
+					<div class="col-md-4 col-xs-4 blue-box-stripes">
+					</div> <!-- blue-box-stripes -->
+				</div>
 			<div><!-- row -->
 			
-		<section class="single-dog-content">
+		<section class="single-story-content">
 		   	<div class="row">
 		   		<div class="col-md-8 col-md-push-2 single-image">
 	       			<?php 
@@ -26,19 +28,10 @@
 	       	</div><!-- row -->
 	       	
 	       	<div class="row">
-		   		<div class="adopt-dog-info col-md-8 col-md-push-2 col-xs-6">
-		       		<?php 
-		        	$age = get_post_meta( $post->ID, 'adopt_age', true );
-	            	$breed = get_post_meta( $post->ID, 'adopt_breed', true );
-		        	if( !empty($age) ) { 
-	            		echo '<p><strong>Age:</strong> '.$age. ' years old'. '</p>';
-	            	} ;
-	            	if( !empty($breed) ) { 
-	            		echo '<p><strong>breed:</strong> '.$breed.'</p>';
-	            	};
-	            	?>
+		   		<div class="story-info col-md-8 col-md-push-2 col-xs-6">
+		       		
 	       		</div> <!-- col 8 -->
-		   	</div> <!-- row adopt-dog-info -->
+		   	</div> <!-- row story-dog-info -->
 		   	
 		   	<div class="row">
 		   		<div class="entry-content col-md-12">
@@ -47,18 +40,11 @@
 			</div> <!-- row -->
 		   
 		   	<div class="row">
-				<div class="adopt-contact col-md-12">
+				<div class="story-contact col-md-12">
 					<?php
-					$contact_person = get_post_meta( $post->ID, 'adopt_contact_p', true );
-	        		$contact_email = get_post_meta( $post->ID, 'adopt_contact_e', true );
-		    		if( !empty($contact_person && $contact_email && is_email($contact_email)) ) { 
-	        			echo '<p><strong>If interested in '. get_the_title() . ' contact ' . $contact_person .' at ' . $contact_email . '</strong></p>';
-		    		}
-		    		else {
 		    			echo '<p><strong>If interested in ' . get_the_title() . ' contact Ruseel Rescue at russellrescuetn@gmail.com</strong></p>';
-		    		}
 					?>
-				</div><!-- adopt-contact col-12 -->
+				</div><!-- story-contact col-12 -->
 			</div><!-- row -->
 			
 			<div class="row">
@@ -75,5 +61,5 @@
 	 			</div> <!-- col 12 pagination -->
 	 		</div> <!-- row -->
 	 	</section> <!-- single-dog-entry -->
-	</section> <!-- green box -->
+	</section> <!-- blue box -->
 <?php get_footer() ?>

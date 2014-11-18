@@ -17,7 +17,7 @@
                 </div> <!-- row--> 
                 <div class="row">
                 <?php if(has_post_thumbnail() ) { ?>
-                    <div class="col-md-6 col-md-push-3">
+                    <div class="col-md-6 col-md-push-3 archive-image">
                         <img src = "<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID) ); ?>" />
                     </div> <!-- col 12 -->
                 <?php

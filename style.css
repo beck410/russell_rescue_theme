@@ -729,7 +729,9 @@ font-size: 1.5em;
 10.1 Posts and pages
 --------------------------------------------------------------*/
 
-
+.pagination {
+	margin: 20px 10px;
+}
 
 #primary {
 	margin-top: 10px;
@@ -765,7 +767,7 @@ font-size: 1.5em;
 }
 
 .box-titles {
-	height: 50px;
+	height: auto
 }
 
 .box-titles h3 {
@@ -775,11 +777,14 @@ font-size: 1.5em;
 }
 
 .green-box-title {
+	background: repeating-linear-gradient( 35deg, #97CB53, #97CB53 4px, #7FAC45 3px, #7FAC45 6px );
+}
+
+.green-box-words {
 	background: #7FAC44;
 }
 
 .green-box-stripes {
-	height: 50px;
 	background: repeating-linear-gradient(
 	    35deg,
 	    #97CB53,
@@ -804,7 +809,6 @@ font-size: 1.5em;
 }
 
 .orange-box-stripes {
-	height: 50px;
 	background: repeating-linear-gradient(
 	    35deg,
 	    #E5C347,
@@ -814,6 +818,39 @@ font-size: 1.5em;
   );	
 }
 
+.box-content {
+	padding-top: 10px;
+}
+
+.archive-image {
+	text-align:center;
+}
+
+.archive-image img {
+	max-height: 200px;
+	width: auto;
+}
+
+.single-image {
+	text-align: center;
+}
+
+.single-image img{
+	max-height: 400px;
+	width: auto;
+}
+
+.single-story-content {
+	padding: 10px;
+}
+
+.single-image {
+	padding-top: 20px;
+}
+
+.content img {
+	margin: 10px;
+}
 
  #home-events-img{
 	max-height: 300px;
@@ -894,7 +931,7 @@ font-size: 1.5em;
 }
 
 .single-dog-content img, .single-events-content img {
-	max-height: 500px;
+	max-height: 300px;
 	margin: 10px auto;
 }
 
@@ -1101,11 +1138,42 @@ object {
 	display: block;
 }
 
+/* ---------------------------------------------
+	Clear Fix
+--------------------------------------------------*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
 /* -----------------------------------------------------------
 	12.3 MEDIA QUERIES 
 -------------------------------------------------------------- */
 
 @media screen and (max-width: 530px) {
+	
+	.single-image img{
+	max-height: 200px;
+	}
+	
+	.box-content, .home-images {
+		width: 100%;
+		text-align: center;
+	}
 	
 	p{
 		line-height: 1.25em;
@@ -1132,21 +1200,17 @@ object {
 	}
 }
 
-@media screen and (max-width: 680px) {
-	.green-box-title, .orange-box-title, .blue-box-title{
-		width: 100%;
+@media screen and (max-width: 780px) {
+	
+	.single-image img{
+		max-height: 300px;
 	}
-	.green-box-stripes, .orange-box-stripes, .blue-box-stripes {
-		display:none;
-	}
-
 }
 
-@media screen and (min-width: 850px){
-/* fixes column height on first page */ 
-	
+
+@media screen and (max-width: 850px){
 	h1{
-		font-size: 2.5em;
+		font-size: 2em;
 		line-height: 1.125em;
 	}
 	
@@ -1164,6 +1228,17 @@ object {
 		font-size: 1,125em;
 		line-height: 1.222222222em;
 	}
+	
+	.green-box-title, .orange-box-title, .blue-box-title{
+		width: 100%;
+	}
+	.green-box-stripes, .orange-box-stripes, .blue-box-stripes {
+		display:none;
+	}
+}
+
+@media screen and (min-width: 850px){
+/* fixes column height on first page */ 
 	
 	#site-header {
 		padding: 0;
@@ -1207,7 +1282,7 @@ object {
 }
 
 @media screen and (min-width: 851px) and (max-width: 992px){
-		.top-menu a{
+	.top-menu a{
 		background: none;
 	}
 	
@@ -1241,9 +1316,9 @@ object {
 --------------------------------------------------------------*/
 @media screen and (min-width: 993px) {
 	.donate-button {
-	margin: 20px auto;
-	clear: both;
-	display: block;
+		margin: 20px auto;
+		clear: both;
+		display: block;
 	}
 	
 	#site-header {
@@ -1252,10 +1327,10 @@ object {
 	}
 	
 	#main {
-	background: #0078e8;
-	padding:0;
-	margin-left:0;
-	margin-right: 0;
+		background: #0078e8;
+		padding:0;
+		margin-left:0;
+		margin-right: 0;
 	}
 }
 /*--------------------------------------------------------------

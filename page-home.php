@@ -3,12 +3,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="green-box">
-                                        <div class="col-md-8 col-xs-8 box-titles green-box-title">
+                                    <div class="green-box-title cf">
+                                        <div class="col-md-8 col-xs-8 green-box-words">
                                         <h3>Dog of the Week</h3>
                                         </div> <!-- .col 8 #home-week-title -->
                                         <div class="col-md-4 col-xs-4 green-box-stripes">
                                         </div>
-                                    <div class="row boxes">
+                                    </div>
+                                    <div class="row">
                                     <?php 
                                     $week_args = array( 'post_type' => 'dog_adoption', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => 1, 'category_name' => 'dog-of-week' );
                                     $week_loop = new WP_Query( $week_args );
@@ -18,8 +20,9 @@
                                             <?php
                                             $age = get_post_meta( $post->ID, 'adopt_age', true );
                                             $breed = get_post_meta( $post->ID, 'adopt_breed', true );
-                                            $little_excerpt = substr(get_the_excerpt(),0,150);
+                                            $little_excerpt = substr(get_the_excerpt(),1,150);
                                              ?>
+                                            <div id="dog-of-week-content">
                                                 <div class="col-md-6 col-xs-6">
                                                     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" />
                                                 </div>
@@ -28,6 +31,7 @@
                                                     <p><strong>Breed: </strong><?php echo $breed ?></p>
                                                     <p><strong>Description: </strong><?php echo $little_excerpt; ?><span>... </span><a href="<?php the_permalink(); ?>"></span>More Info<span></p>
                                                 </div>
+                                            </div>
                                             <?php 
                                         endwhile;
                                     }
@@ -36,17 +40,17 @@
                                     }
                                     ?>
                                     
-                                    </div> <!-- dog of week -->
-                                </div> <!-- row -->
+                                    </div> <!-- row -->
+                                </div> <!-- green box -->
                             </div> <!-- .col 6  -->
                             <div class="col-md-6">
                                 <div class="orange-box">
-                                            <div class="col-md-8 col-xs-8 box-titles orange-box-title">
-                                                <h3>Upcoming Events</h3>
-                                            </div> <!-- .col 8 #home-events-title -->
-                                            <div class="col-md-4 col-xs-4 orange-box-stripes">
+                                        <div class="col-md-8 col-xs-8 box-titles orange-box-title">
+                                            <h3>Upcoming Events</h3>
+                                        </div> <!-- .col 8 #home-events-title -->
+                                        <div class="col-md-4 col-xs-4 orange-box-stripes">
                                     </div> <!-- .col 4 #home-events-stripes -->
-                                <div class="row boxes">
+                                <div class="row">
                                     <div class="col-md-4 col-xs-6">
                                         <img id="home-events-img"  src="<?php echo get_template_directory_uri(); ?>/img/rescue.jpg" />
                                     </div>
@@ -74,12 +78,12 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="blue-box">
-                                    <div class="col-md-8 col-xs-8 box-titles blue-box-title">
+                                    <div class="col-md-8 col-xs-8 box-titles" id="home-about-title">
                                         <h3>About Russell Rescue</h3>
                                     </div> <!-- .col 8 #home-about-title -->
-                                    <div class="col-md-4 col-xs-4 blue-box-stripes">
+                                    <div class="col-md-4 col-xs-4" id="home-about-stripes">
                                     </div> <!-- col 4 #home-about-stripes -->
-                                    <div class="row boxes">
+                                    <div class="row">
                                         <div class="col-md-12">
                                             <?php while ( have_posts() ) : the_post(); ?>
                                                 <div id="about-rr-content">
