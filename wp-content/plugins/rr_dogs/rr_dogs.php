@@ -76,6 +76,33 @@ function rr_post_types() {
     );    
         
     register_post_type( 'events', $event_args );
+    
+        $adopted_labels = array(
+            'name' => 'Adoption Stories',
+            'singular_name' => 'adoption Stories',
+            'add_new' => 'Add New Story',
+            'add_new_item' => 'Add New Story',
+            'edit' => 'Edit  Story',
+            'edit_item' => 'Edit Story',
+            'new_item' => 'New Story',
+            'view' => 'View Story',
+            'view_item' => 'View Story',
+            'search_items' => 'Search Stories',
+            'not_found' => 'No Stories Found',
+            'not_found_in_trash' => 'No Stories Found in Trash',
+        );
+        
+        $adopted_args = array(
+            'labels' => $adopted_labels,
+            'public' => true,
+            'menu_position' => 5,
+            'supports' => array( 'title', 'editor','excerpt', 'thumbnail' ),
+            'taxonomies' => array( 'category' ),
+            'menu_icon' => plugins_url( 'img/paw.png', __FILE__ ),
+            'has_archive' => true,
+        ); 
+        
+    register_post_type( 'adoption_stories', $adopted_args );
 };
 
 /* META BOXES */

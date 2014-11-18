@@ -14,7 +14,7 @@
 			
 		<section class="single-dog-content">
 		   	<div class="row">
-		   		<div class="col-md-8 col-md-push-2 col-xs-6">
+		   		<div class="col-md-8 col-md-push-2 single-image">
 	       			<?php 
 	       			if( has_post_thumbnail() ){
 	       				?>

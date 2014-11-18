@@ -12,7 +12,7 @@
 		
 		<section class="single-events-content">     
 			<div class="row">
-				<div class="col-md-8 col-md-push-2 col-xs-6">
+				<div class="col-md-8 col-md-push-2">
 					<?php
 	       			if( has_post_thumbnail() ) { ?>
 	        			<img src= "<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID) ); ?>" />
