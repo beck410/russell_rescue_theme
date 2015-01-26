@@ -5,11 +5,14 @@
  * @package r_rescue
  */
 ?>
-<div class="row">
+<div class="row rr_donate">
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 	<div id="paypal_button" class="paypal_button widget-area" role="complementary">
 		<?php dynamic_sidebar( 'paypal_button' ); ?>
-	</div><!-- #primary-sidebar -->
+	</div><!-- #paypal_button -->
+	<div id="rr_shop">
+		<a href="http://www.cafepress.com/russellrescuetn" target="_blank">Purchase Russell Rescue Goodies</a>	
+	</div>
 	<?php endif; ?>
 </div>
 
