@@ -1002,10 +1002,12 @@ font-size: 1.5em;
 	height: auto;
 }
 
-#paypal_button {
+#paypal_button, #store-link {
 	background: #31A0FC;
 	margin: 10px;
-	padding: 5px;
+	padding: 5px; 
+	width: auto;
+	text-align: center;
 }
 
 #paypal_button input[type='image'] {

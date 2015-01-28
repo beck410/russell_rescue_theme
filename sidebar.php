@@ -7,9 +7,14 @@
 ?>
 <div class="row">
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	<div id="paypal_button" class="paypal_button widget-area" role="complementary">
-		<?php dynamic_sidebar( 'paypal_button' ); ?>
-	</div><!-- #primary-sidebar -->
+	<div class="col-xs-6 col-md-12">
+		<div id="paypal_button" class="paypal_button widget-area" role="complementary">
+			<?php dynamic_sidebar( 'paypal_button' ); ?>
+		</div><!-- #primary-sidebar -->
+	</div>
+	<div class="col-md-12 col col-xs-6" id="store-link">
+		<a href="http://www.cafepress.com/russellrescuetn" target="_blank">Visit Russell Rescue Store</a>	
+	</div>
 	<?php endif; ?>
 </div>
 
