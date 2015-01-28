@@ -744,47 +744,34 @@ font-size: 1.5em;
 .content{
 	background-color: #EDEDED;
 	padding-bottom: 30px;
+	min-height: 600px;
 }
 
-/* --- HOME PAGE --- */
-
-#content-header {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.about-rr-content {
+	padding: 0 10px;
 }
 
-.boxes {
-	padding: 50px 2%;
+/* -- box styles --*/
+.box-title {
+	height: auto;
 }
 
-.green-box {
-	background-color:#97CB53;
-	margin: 10px 0;
-}
-
-.green-box img {
-	border: 5px solid #7FAC44;
-}
-
-.box-titles {
-	height: auto
-}
-
-.box-titles h3 {
+.box-title h3 {
 	padding: 5px 0;
 	font-weight: bold;
 	color: #fff;
 }
 
+.box{
+	padding: 10px;
+}
+
+.box img {
+	width: 100%
+	height auto;
+}
+
 .green-box-title {
-	background: repeating-linear-gradient( 35deg, #97CB53, #97CB53 4px, #7FAC45 3px, #7FAC45 6px );
-}
-
-.green-box-words {
-	background: #7FAC44;
-}
-
-.green-box-stripes {
 	background: repeating-linear-gradient(
 	    35deg,
 	    #97CB53,
@@ -794,29 +781,62 @@ font-size: 1.5em;
   );
 }
 
-.orange-box {
-	background-color: #E5C347;	
-	margin: 10px 0;
+.green-title-header {
+	background: #7FAC44;
 }
 
-.orange-box img{
-	border: 5px solid #C8AB3E;
-	/* margin: 10px; */
+.green-box-content {
+	background-color:#97CB53;
+	padding: 10px;
 }
 
 .orange-box-title {
-	background: #C8AB3E;
+	background: repeating-linear-gradient(
+		35deg,
+		#E5C347,
+		#E5C347 4px,
+		#C8AB3E 3px,
+		#C8AB3E 6px
+  );
 }
 
-.orange-box-stripes {
+.orange-title-header {
+	background: #C8AB3E
+}
+
+.orange-box-content {
+	background-color:#E5C347;
+	padding: 10px;
+}
+
+.blue-box-title {
 	background: repeating-linear-gradient(
 	    35deg,
-	    #E5C347,
-	    #E5C347 4px,
-	    #C8AB3E 3px,
-	    #C8AB3E 6px
-  );	
+	    #46C9F5,
+	    #46C9F5 4px,
+	    #3CADD2 3px,
+	    #3CADD2 6px
+  );
 }
+
+.blue-title-header {
+	background: #3CADD2;
+}
+
+.blue-box-content {
+	background-color: #46C9F5;
+	padding: 10px;
+}
+
+/* --- HOME PAGE --- */
+
+#content-header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
 
 .box-content {
 	padding-top: 10px;
@@ -859,33 +879,7 @@ font-size: 1.5em;
 
 #home-events-info{
 	height: auto;
-}
-
-.blue-box {
-	background-color: #46C9F5;
-	height: auto;
-	margin: 10px 0;
-	padding-bottom: 10px;
-}
-
-.blue-box img{
-	border: 5px solid #3CADD2;
-}
-
-.blue-box-title {
-	background: #3CADD2;	
-}
-
-.blue-box-stripes {
-	height: 50px;
-	background: repeating-linear-gradient(
-	    35deg,
-	    #46C9F5,
-	    #46C9F5 4px,
-	    #3CADD2 3px,
-	    #3CADD2 6px
-  );	
-}
+}}
 
 .home-rows {
 	padding-top: 20px;

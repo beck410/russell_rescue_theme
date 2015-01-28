@@ -114,6 +114,8 @@ function r_rescue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'r_rescue_scripts' );
 
+add_filter('widget_text', 'do_shortcode');
+
 /**
  * Implement the Custom Header feature.
  */
