@@ -30,7 +30,15 @@ Template Name: home
                          ?>
                         <div id="dog-of-week-content">
                             <div class="col-md-6 col-xs-6">
-                                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" />
+                                <?php
+                                if( has_post_thumbnail() ) { ?>
+                                    <img src= "<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID) ); ?>" />
+                                <?php
+                                }
+                                else{
+                                    echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/archive-dog-default.jpg" />';
+                                }
+                                ?>
                             </div>
                             <div class="col-md-6 col-xs-6">
                                 <h4><strong><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></strong></a></h4>

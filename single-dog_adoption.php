@@ -10,12 +10,14 @@
             <div class="green-box-content cf">
             	<div class="col-md-8 col-md-push-2 single-image">
 	       			<?php 
-	       			if( has_post_thumbnail() ){
-	       				?>
-						<img src= "<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID) ); ?>" />			
-	       				<?php
-	       			}
-	       			?>
+	                    if( has_post_thumbnail() ) { ?>
+	                        <img src= "<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID) ); ?>" />
+	                    <?php
+	                    }
+	                    else{
+	                        echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/archive-dog-default.jpg" />';
+	                    }
+	                ?>
 	       		</div> <!-- single-image -->
 		   		<div class="adopt-dog-info col-md-8 col-md-push-2 col-xs-6">
 		       		<?php 
