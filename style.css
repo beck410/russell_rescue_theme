@@ -1002,9 +1002,8 @@ font-size: 1.5em;
 	height: auto;
 }
 
-#paypal_button, #store-link {
+.sidebar-links {
 	background: #31A0FC;
-	margin: 10px;
 	padding: 5px; 
 	width: auto;
 	text-align: center;
@@ -1190,6 +1189,10 @@ object {
 
 @media screen and (max-width: 780px) {
 	
+ #store-link {
+ 	padding-top: 25px;
+ }
+	
 	.single-image img{
 		max-height: 300px;
 	}
@@ -1197,6 +1200,7 @@ object {
 
 
 @media screen and (max-width: 850px){
+	
 	h1{
 		font-size: 2em;
 		line-height: 1.125em;

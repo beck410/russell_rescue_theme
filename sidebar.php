@@ -5,7 +5,7 @@
  * @package r_rescue
  */
 ?>
-<div class="row">
+<div class="row sidebar-links">
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 	<div class="col-xs-6 col-md-12">
 		<div id="paypal_button" class="paypal_button widget-area" role="complementary">
