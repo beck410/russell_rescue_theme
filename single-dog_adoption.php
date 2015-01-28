@@ -1,20 +1,14 @@
 <?php get_header(); ?>
-
-
-    <?php while ( have_posts() ) : the_post(); ?>
-
-    <section class="col-md-12 green-box">
-        	<div class="row">
-        		<div class="col-md-8 col-xs-8 green-box-title box-titles">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</div> <!-- green-box-title -->
-				<div class="col-md-4 col-xs-4 green-box-stripes">
-				</div> <!-- green-box-stripes -->
-			<div><!-- row -->
-			
-		<section class="single-dog-content">
-		   	<div class="row">
-		   		<div class="col-md-8 col-md-push-2 single-image">
+	<?php while ( have_posts() ) : the_post(); ?>
+        <div class="col-md-12 box">
+            <div class="box-title green-box-title cf">
+                <div class="col-md-8 col-xs-8 green-title-header">
+ 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>  
+                </div><!-- col-8 -->
+                <div class="col-md-4 col-xs-4"></div>
+            </div><!-- box-title -->
+            <div class="green-box-content cf">
+            	<div class="col-md-8 col-md-push-2 single-image">
 	       			<?php 
 	       			if( has_post_thumbnail() ){
 	       				?>
@@ -22,10 +16,7 @@
 	       				<?php
 	       			}
 	       			?>
-	       		</div> <!-- col 8 -->
-	       	</div><!-- row -->
-	       	
-	       	<div class="row">
+	       		</div> <!-- single-image -->
 		   		<div class="adopt-dog-info col-md-8 col-md-push-2 col-xs-6">
 		       		<?php 
 		        	$age = get_post_meta( $post->ID, 'adopt_age', true );
@@ -37,16 +28,10 @@
 	            		echo '<p><strong>breed:</strong> '.$breed.'</p>';
 	            	};
 	            	?>
-	       		</div> <!-- col 8 -->
-		   	</div> <!-- row adopt-dog-info -->
-		   	
-		   	<div class="row">
+	       		</div> <!-- col 8 aodopt-dog-info -->	
 		   		<div class="entry-content col-md-12">
 			    	<?php the_content(); ?>
-			   	</div><!-- col 12 entry-content -->
-			</div> <!-- row -->
-		   
-		   	<div class="row">
+			   	</div><!-- col 12 entry-content -->	  
 				<div class="adopt-contact col-md-12">
 					<?php
 					$contact_person = get_post_meta( $post->ID, 'adopt_contact_p', true );
@@ -59,9 +44,6 @@
 		    		}
 					?>
 				</div><!-- adopt-contact col-12 -->
-			</div><!-- row -->
-			
-			<div class="row">
 				<div class="col-md-10 col-md-push-1 pagination">
 			    	<?php
 				    	wp_link_pages( array(
@@ -71,9 +53,10 @@
 			    	?>
 	        		<!-- navigates to next dog -->
 	        		<?php r_rescue_post_nav(); ?>
-	    			<?php endwhile; ?>
+
 	 			</div> <!-- col 12 pagination -->
-	 		</div> <!-- row -->
-	 	</section> <!-- single-dog-entry -->
-	</section> <!-- green box -->
+			</div><!-- green-box-content -->
+			
+
+	<?php endwhile; ?>
 <?php get_footer() ?>

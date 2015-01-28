@@ -747,6 +747,9 @@ font-size: 1.5em;
 	min-height: 600px;
 }
 
+
+/* --- HOME PAGE --- */
+
 .about-rr-content {
 	padding: 0 10px;
 }
@@ -828,7 +831,6 @@ font-size: 1.5em;
 	padding: 10px;
 }
 
-/* --- HOME PAGE --- */
 
 #content-header {
 	margin-top: 20px;
@@ -836,11 +838,10 @@ font-size: 1.5em;
 }
 
 
-
-
 .box-content {
 	padding-top: 10px;
 }
+
 
 .archive-image {
 	text-align:center;
@@ -851,7 +852,7 @@ font-size: 1.5em;
 	width: auto;
 }
 
-.single-image {
+.single-image, .single-meta {
 	text-align: center;
 }
 
@@ -871,15 +872,6 @@ font-size: 1.5em;
 .content img {
 	margin: 10px;
 }
-
- #home-events-img{
-	max-height: 300px;
-	width: auto;
-}
-
-#home-events-info{
-	height: auto;
-}}
 
 .home-rows {
 	padding-top: 20px;
