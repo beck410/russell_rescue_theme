@@ -98,9 +98,9 @@ Template Name: home
                     	     <?php the_content(); ?>
                         </div>
                     <?php endwhile ?>
-                </div>
-            </div>
-        </div><!-- col-12 -->
+                </div><!-- col 6 -->
+            </div><!-- blue-box-content -->
+        </div><!-- box -->
     </div>
 
 <?php get_footer() ?>
