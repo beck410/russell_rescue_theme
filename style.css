@@ -71,6 +71,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
+	font-family: 'Open Sans';
 }
 
 html {
@@ -750,8 +751,12 @@ font-size: 1.5em;
 
 /* --- HOME PAGE --- */
 
-.about-rr-content {
-	padding: 0 10px;
+.home_about p{
+	padding-left: 25px;
+}
+
+.home_about_img {
+	width: 20%;
 }
 
 /* -- box styles --*/

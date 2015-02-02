@@ -59,7 +59,7 @@ Template Name: home
         <div class="col-md-6 box">
             <div class="box-title orange-box-title cf">
                 <div class="col-md-8 col-xs-4 orange-title-header">
-                    <h3>Dog Of The Week</h3>
+                    <h3>Upcoming Events</h3>
                 </div><!-- col-8 -->
                 <div class="col-md-4 col-xs-4"></div>
             </div><!-- box-title -->
@@ -89,18 +89,15 @@ Template Name: home
         <!-- ABOUT RUSSELL RESCUE -->
     </div><!-- row -->
     <div class="row">
-        <div class="col-md-12 box">
+        <div class="col-md-12 box home_about">
             <div class="box-title blue-box-title cf">
                 <div class="col-md-8 col-xs-8 blue-title-header">
-                    <h3>Dog Of The Week</h3>
+                    <h3>About Russell Rescue</h3>
                 </div><!-- col-8 -->
                 <div class="col-md-4 col-xs-4"></div>
             </div><!-- box-title -->
             <div class="blue-box-content cf">
-                <div class="col-md-4 col-xs-6">
-                    <img id="home-about-img"  src="<?php echo get_template_directory_uri(); ?>/img/rescue.jpg" />
-                </div>
-                <div class="col-md-8 col-xs-6">
+                <div class="col-md-12">
                     <?php while ( have_posts() ) : the_post(); ?>
                         <div id="about-rr-content">
                     	     <?php the_content(); ?>
