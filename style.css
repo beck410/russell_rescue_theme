@@ -757,6 +757,7 @@ font-size: 1.5em;
 
 .home_about_img {
 	width: 20%;
+	border: 5px solid #3CADD2;
 }
 
 /* -- box styles --*/
@@ -798,6 +799,10 @@ font-size: 1.5em;
 	padding: 10px;
 }
 
+.green-box-content img {
+	border: 5px solid #7FAC44;
+}
+
 .orange-box-title {
 	background: repeating-linear-gradient(
 		35deg,
@@ -815,6 +820,10 @@ font-size: 1.5em;
 .orange-box-content {
 	background-color:#E5C347;
 	padding: 10px;
+}
+
+.orange-box-content img {
+	border: 5px solid #C8AB3E;
 }
 
 .blue-box-title {

@@ -65,11 +65,11 @@ Template Name: home
             </div><!-- box-title -->
             <div class="orange-box-content cf">
                 <div class="col-md-4 col-xs-6">
-                    <img id="home-events-img"  src="<?php echo get_template_directory_uri(); ?>/img/rescue.jpg" />
+                    <img id="home-events-img"  src="<?php echo get_template_directory_uri(); ?>/img/russell_rescue_balloon.jpg" />
                 </div>
                 <div class="col-md-8 col-xs-6">
                 <?php
-                    $args = array( 'post_type' => 'events', 'posts_per_page' => 3 );
+                    $args = array( 'post_type' => 'events', 'posts_per_page' => 5 );
                     $event_loop = new WP_Query( $args );
 
                     while ( $event_loop->have_posts() ) : $event_loop->the_post();
