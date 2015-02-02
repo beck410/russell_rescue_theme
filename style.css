@@ -1201,6 +1201,12 @@ object {
 	}
 }
 
+@media screen and (max-width: 580px ){
+	.home_about img {
+		display:none;
+	}
+}
+
 @media screen and (max-width: 780px) {
 	
  #store-link {
@@ -1214,6 +1220,10 @@ object {
 
 
 @media screen and (max-width: 850px){
+	
+	#about-rr-content {
+		margin: 0;
+	}
 	
 	h1{
 		font-size: 2em;
@@ -1312,11 +1322,6 @@ object {
 
 }
 
-@media screen and (max-width: 992px){
-	#about-rr-content {
-		margin: 50px 10px 10px 10px;
-	}
-}
 /*--------------------------------------------------------------
 12.2 Medium Devices (992px & up)
 --------------------------------------------------------------*/

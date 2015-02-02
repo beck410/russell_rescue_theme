@@ -58,7 +58,7 @@ Template Name: home
         <!-- EVENTS -->
         <div class="col-md-6 box">
             <div class="box-title orange-box-title cf">
-                <div class="col-md-8 col-xs-4 orange-title-header">
+                <div class="col-md-8 col-xs-8 orange-title-header">
                     <h3>Upcoming Events</h3>
                 </div><!-- col-8 -->
                 <div class="col-md-4 col-xs-4"></div>
