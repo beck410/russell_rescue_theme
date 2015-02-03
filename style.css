@@ -755,7 +755,7 @@ font-size: 1.5em;
 	padding-left: 25px;
 }
 
-.home_about_img {
+.home_about img, .page_ingo img {
 	width: 20%;
 	border: 5px solid #3CADD2;
 }
@@ -784,15 +784,14 @@ font-size: 1.5em;
 	background: repeating-linear-gradient(
 	    35deg,
 	    #97CB53,
-	    #97CB53 4px,
-	    #7FAC45 3px,
-	    #7FAC45 6px
+	    #97CB53 5px,
+	    #7FAC45 4px,
+	    #7FAC45 10px
   );
 }
 
 .green-title-header {
 	background: #7FAC44;
-	padding: 10px;
 }
 
 .green-box-content {
@@ -808,15 +807,14 @@ font-size: 1.5em;
 	background: repeating-linear-gradient(
 		35deg,
 		#E5C347,
-		#E5C347 4px,
-		#C8AB3E 3px,
-		#C8AB3E 6px
+		#E5C347 5px,
+		#C8AB3E 4px,
+		#C8AB3E 10px
   );
 }
 
 .orange-title-header {
-	background: #C8AB3E;
-	padding: 10px;
+	background: #C8AB3E
 }
 
 .orange-box-content {
@@ -832,15 +830,14 @@ font-size: 1.5em;
 	background: repeating-linear-gradient(
 	    35deg,
 	    #46C9F5,
-	    #46C9F5 4px,
-	    #3CADD2 3px,
-	    #3CADD2 6px
+	    #46C9F5 5px,
+	    #3CADD2 4px,
+	    #3CADD2 10px
   );
 }
 
 .blue-title-header {
 	background: #3CADD2;
-	padding: 10px;
 }
 
 .blue-box-content {
@@ -940,10 +937,6 @@ font-size: 1.5em;
 
 .adopt-dog-info, .single-event-info {
 	text-align: center;
-}
-
-.page_info p, .page_info h1, .page_info h2, .page_info span {
-	padding: 10px;
 }
 /*--------------------------------------------------------------
 10.2 Asides
