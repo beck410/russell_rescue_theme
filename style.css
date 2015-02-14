@@ -960,16 +960,13 @@ font-size: 1.5em;
 /*--------------------------------------------------------------
 	10.4 Header
 ----------------------------------------------------------------- */
-#site-header{
-	max-height: 100px;
-	padding: 0 15px 0 15px;
-}
+
 
 #header-rr-logo{
 	display: inline-block;	
-	min-width: 15em;
+	min-width: 10em;
 	min-height: auto;
-	margin-left: -17px;
+	margin-top: 10px;
 }
 	
 #header-rr-social{
@@ -1261,7 +1258,8 @@ object {
 	}
 	
 	#header-rr-logo{
-	margin-left: -5px;
+	padding-bottom: 10px;
+	padding-top:10px;
 	}
 	
 	#rr-social-text{

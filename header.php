@@ -25,7 +25,7 @@
 	<div class="container" class="hfeed site">
 		<div id="site-header" class="row">	
 			<div class="col-md-6 col-xs-6">
-				<img id="header-rr-logo" src="<?php echo get_template_directory_uri(); ?>/img/rrlogo_md.png" />
+				<img id="header-rr-logo" src="<?php echo get_template_directory_uri(); ?>/img/RRlogo.png" />
 			</div>
 			<div class="col-md-6 col-xs-6 text-right" id="header-rr-social">
 				<img id="header-rr-paw"  src="<?php echo get_template_directory_uri(); ?>/img/paw.png" />
